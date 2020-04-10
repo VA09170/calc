@@ -26,8 +26,6 @@ if args.count > 2{
     let cal = Calculator() // calculator class object
     // perform operation based on postfix expression
     let FinalResult = cal.calculate(args: PostfixExpression)
-    //also check the result isOutOfBound() or not result > Int32.max and result < Int32.min
-    Validate(args: ["\(FinalResult)"]).isOutOfBound()
     //print the final output.
     print(FinalResult)
 }

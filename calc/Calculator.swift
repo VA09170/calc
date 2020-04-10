@@ -99,7 +99,8 @@ class Calculator{
         default:
             ExceptionHandling(errInput: opt).UnknowOperator()
         }
-//        Validate(args: ["\(dummpyresult!)"]).isOutOfBound()
+        //also check the result isOutOfBound() or not result > Int.max and result < Int.min
+        Validate(args: ["\(dummpyresult!)"]).isOutOfBound()
         return (dummpyresult!, true)
     }
     
